@@ -1,5 +1,5 @@
 {
-  "trained_at": "2026-05-18T00:37:12.012776",
+  "trained_at": "2026-05-21T10:31:17.562215",
   "dataset_size": 2000,
   "feature_columns": [
     "revenue",

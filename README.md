@@ -6,10 +6,40 @@ A full-stack multi-agent platform that automates corporate financial analysis ac
 
 > **Capstone Project — Software Engineering Department**
 > İstinye University, 2026
-> **Authors:** Dan Alawad & Malak Mohammad
+> **Authors:** Malak Mohammad & Dan Alawad 
 > **Supervisor:** Dr. Hüsamettin Osmanoğlu
 
 ---
+
+## My Contribution
+
+This project was completed as a two-person Software Engineering capstone project. My primary responsibilities focused on the backend architecture, service orchestration, and system integration components of the platform.
+
+### Primary Contributions
+
+- Designed and implemented the backend architecture using **Node.js** and **Express.js**
+- Developed RESTful API endpoints to support financial analysis workflows and task management
+- Implemented **RabbitMQ-based asynchronous messaging** to enable communication between the backend and multiple financial agents
+- Built the task orchestration and processing logic responsible for coordinating agent execution and result aggregation
+- Integrated **SQLite** database persistence for storing tasks, analysis results, and system data
+- Managed communication between the frontend interface and backend services
+- Assisted in the integration and deployment of machine learning-based financial analysis agents within the multi-agent architecture
+- Participated in system integration, debugging, testing, and final deployment activities
+- Contributed to project documentation and technical presentation preparation
+
+### Skills Demonstrated
+
+- Backend Software Engineering
+- REST API Development
+- Distributed Systems & Service Communication
+- Message-Driven Architecture
+- RabbitMQ Integration
+- Database Design & Integration
+- System Integration
+- Multi-Agent System Architecture
+- Software Testing & Debugging
+
+This project strengthened my experience in distributed systems, backend engineering, message-driven architectures, and the integration of machine learning components into real-world software systems.
 
 ## Architecture
 
