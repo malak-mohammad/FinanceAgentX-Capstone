@@ -43,23 +43,31 @@ This project strengthened my experience in distributed systems, backend engineer
 
 ## Architecture
 
-```
-Frontend (Browser)  →  REST API (Express.js)  →  RabbitMQ Message Broker
-                                                        │
-                              ┌──────────────────────────┼──────────────────────────┐
-                              │             │            │            │              │
-                        Invoice Agent  Budget Agent  Recon Agent  Credit Agent  Cash Agent
-                              │             │            │            │              │
-                        Python ML      Python ML    Python ML    Python ML     Python ML
-                        (3 models)     (3 models)   (3 models)   (3 models)    (3 models)
-                              │             │            │            │              │
-                              └──────────────────────────┼──────────────────────────┘
-                                                        │
-                                                  Results Queue  →  SQLite Database
-                                                        │
-                                              Frontend (real-time polling)
-```
+This section explains the system design, message flow, and task execution lifecycle of FinanceAgentX.
 
+---
+
+### 1. System Overview
+
+![System Architecture](./assets/system-architecture.png)
+
+The system follows a multi-agent distributed architecture where the frontend communicates with a Node.js backend, which orchestrates multiple AI agents via RabbitMQ.
+
+---
+
+### 2. Task Execution Sequence
+
+![Sequence Diagram](./assets/sequence-diagram.png)
+
+This diagram shows how a user request flows through the system step-by-step, from API request to agent execution and result aggregation.
+
+---
+
+### 3. Task Processing Workflow
+
+![Task Workflow](./assets/task-workflow.png)
+
+This workflow illustrates how tasks are decomposed, routed to agents, processed using ML models, and returned as structured financial insights.
 ## Technology Stack
 
 | Layer | Technology |
